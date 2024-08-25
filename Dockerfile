@@ -1,11 +1,11 @@
-FROM python3:latest
+FROM python
 
 WORKDIR ./
 
 COPY . .
 
-RUN "pip install flask"
+RUN pip install flask
 
-CMD ["python","Mypython.py"]
+CMD ["python3","Mypython.py"]
 
 EXPOSE 5000
